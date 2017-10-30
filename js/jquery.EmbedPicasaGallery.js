@@ -74,7 +74,7 @@
         defaultOptions: {
             matcher : RegExp('.+'),
             size    : 72,
-            msg_loading_list : 'Loading album list from PicasaWeb',
+            msg_loading_list : 'Loading..',
             msg_back : 'back',
             msg_more : 'more',
             album_title_tag: '<h2/>',
@@ -171,7 +171,8 @@
         		if (data.feed && data.feed.entry){
     	            $.each(data.feed.entry,appendImage);
         		} else {
-          		    $this.text('Warning: No picasa albums found for user ' + user);
+          		    $this.text('Warning: Loading Error!' );
+          		    // $this.text('Warning: No picasa albums found for user ' + user);
 		        }
                 Cache.__overview = $album_list;
                 $albums = $album_list.children();
