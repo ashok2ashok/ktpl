@@ -1,2 +1,2 @@
-# Karlo Transport Private Limited
-Static Website Code for KarloTransport.com 
+# KTPL
+Static Website Code Template
